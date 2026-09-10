@@ -1,0 +1,12 @@
+com\traffic\model\Challan.class
+com\traffic\app\Main.class
+com\traffic\exception\VehicleNotFoundException.class
+com\traffic\model\Vehicle.class
+com\traffic\exception\InvalidVehicleException.class
+com\traffic\exception\DuplicateChallanException.class
+com\traffic\model\VehicleType.class
+com\traffic\model\ViolationType.class
+com\traffic\service\ChallanService.class
+com\traffic\model\PaymentStatus.class
+com\traffic\model\VehicleClassification.class
+com\traffic\service\ChallanService$1.class

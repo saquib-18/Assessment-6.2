@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: com.traffic.service.ChallanServiceTest
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.206 s <<< FAILURE! - in com.traffic.service.ChallanServiceTest
+testSignalViolation(com.traffic.service.ChallanServiceTest)  Time elapsed: 0.019 s  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1000.0> but was:<1500.0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.traffic.service.ChallanServiceTest.testSignalViolation(ChallanServiceTest.java:169)
+
+testIllegalParking(com.traffic.service.ChallanServiceTest)  Time elapsed: 0.003 s  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<500.0> but was:<750.0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.traffic.service.ChallanServiceTest.testIllegalParking(ChallanServiceTest.java:191)
+
+testNormalSpeedingFine(com.traffic.service.ChallanServiceTest)  Time elapsed: 0.001 s  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<500.0> but was:<750.0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.traffic.service.ChallanServiceTest.testNormalSpeedingFine(ChallanServiceTest.java:81)
+
+testMediumSpeedingFine(com.traffic.service.ChallanServiceTest)  Time elapsed: 0.005 s  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1000.0> but was:<1500.0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.traffic.service.ChallanServiceTest.testMediumSpeedingFine(ChallanServiceTest.java:103)
+
+testHighSpeedingFine(com.traffic.service.ChallanServiceTest)  Time elapsed: 0 s  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<2000.0> but was:<3000.0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.traffic.service.ChallanServiceTest.testHighSpeedingFine(ChallanServiceTest.java:125)
+
+testOutstandingFine(com.traffic.service.ChallanServiceTest)  Time elapsed: 0.008 s  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1500.0> but was:<2250.0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.traffic.service.ChallanServiceTest.testOutstandingFine(ChallanServiceTest.java:279)
+
+testMultipleUnpaidChallans(com.traffic.service.ChallanServiceTest)  Time elapsed: 0.001 s  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<1500.0> but was:<2250.0>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.traffic.service.ChallanServiceTest.testMultipleUnpaidChallans(ChallanServiceTest.java:548)
+
