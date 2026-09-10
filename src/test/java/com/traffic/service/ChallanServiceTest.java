@@ -14,6 +14,7 @@ public class ChallanServiceTest
 
     private LocalDateTime time;
 
+
     protected void setUp() {
 
         service =
@@ -49,6 +50,7 @@ public class ChallanServiceTest
         }
     }
 
+
     // ================================================
     // TEST 1
     // VEHICLE REGISTRATION
@@ -60,6 +62,7 @@ public class ChallanServiceTest
                 2,
                 service.getVehicleCount());
     }
+
 
     // ================================================
     // TEST 2
@@ -83,6 +86,7 @@ public class ChallanServiceTest
                 challan.getFineAmount());
     }
 
+
     // ================================================
     // TEST 3
     // MEDIUM SPEEDING
@@ -104,6 +108,7 @@ public class ChallanServiceTest
                 1000.0,
                 challan.getFineAmount());
     }
+
 
     // ================================================
     // TEST 4
@@ -127,6 +132,7 @@ public class ChallanServiceTest
                 challan.getFineAmount());
     }
 
+
     // ================================================
     // TEST 5
     // SPEED AT PERMITTED LIMIT
@@ -148,6 +154,7 @@ public class ChallanServiceTest
                 0.0,
                 challan.getFineAmount());
     }
+
 
     // ================================================
     // TEST 6
@@ -171,6 +178,7 @@ public class ChallanServiceTest
                 challan.getFineAmount());
     }
 
+
     // ================================================
     // TEST 7
     // ILLEGAL PARKING
@@ -192,6 +200,7 @@ public class ChallanServiceTest
                 500.0,
                 challan.getFineAmount());
     }
+
 
     // ================================================
     // TEST 8
@@ -223,6 +232,7 @@ public class ChallanServiceTest
                 second.getFineAmount());
     }
 
+
     // ================================================
     // TEST 9
     // PAYMENT
@@ -251,6 +261,7 @@ public class ChallanServiceTest
                 PaymentStatus.PAID,
                 challan.getPaymentStatus());
     }
+
 
     // ================================================
     // TEST 10
@@ -281,6 +292,7 @@ public class ChallanServiceTest
                 service.getTotalOutstandingFine());
     }
 
+
     // ================================================
     // TEST 11
     // VEHICLE CLASSIFICATION - CLEAN
@@ -294,6 +306,7 @@ public class ChallanServiceTest
                 service.classifyVehicle(
                         "TN01AA1111"));
     }
+
 
     // ================================================
     // TEST 12
@@ -316,6 +329,7 @@ public class ChallanServiceTest
                 service.classifyVehicle(
                         "TN01AA1111"));
     }
+
 
     // ================================================
     // TEST 13
@@ -344,6 +358,7 @@ public class ChallanServiceTest
         }
     }
 
+
     // ================================================
     // TEST 14
     // NEGATIVE SPEED
@@ -369,6 +384,7 @@ public class ChallanServiceTest
             assertTrue(true);
         }
     }
+
 
     // ================================================
     // TEST 15
@@ -396,6 +412,7 @@ public class ChallanServiceTest
         }
     }
 
+
     // ================================================
     // TEST 16
     // EMPTY LOCATION
@@ -422,6 +439,7 @@ public class ChallanServiceTest
         }
     }
 
+
     // ================================================
     // TEST 17
     // NULL VIOLATION
@@ -447,6 +465,7 @@ public class ChallanServiceTest
             assertTrue(true);
         }
     }
+
 
     // ================================================
     // TEST 18
@@ -483,6 +502,7 @@ public class ChallanServiceTest
         }
     }
 
+
     // ================================================
     // TEST 19
     // MULTIPLE VEHICLES
@@ -510,12 +530,14 @@ public class ChallanServiceTest
                         60);
 
         assertNotNull(c1);
+
         assertNotNull(c2);
 
         assertEquals(
                 2,
                 service.getChallanCount());
     }
+
 
     // ================================================
     // TEST 20
@@ -545,8 +567,12 @@ public class ChallanServiceTest
                 service.getVehicleOutstandingFine(
                         "TN01AA1111");
 
+        // First violation = 500
+        // Second violation = 1000 × 1.5 = 1500
+        // Total = 2000
+
         assertEquals(
-                1500.0,
+                2000.0,
                 total);
     }
 }

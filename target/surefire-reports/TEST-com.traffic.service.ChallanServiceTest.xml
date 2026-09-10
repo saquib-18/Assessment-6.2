@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.traffic.service.ChallanServiceTest" time="0.206" tests="20" errors="0" skipped="0" failures="7">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.traffic.service.ChallanServiceTest" time="0.209" tests="20" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="26"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-26\bin"/>
-    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire13506159587340108276\surefirebooter531399811176680531.jar C:\Users\User\AppData\Local\Temp\surefire13506159587340108276 2026-09-10T19-45-16_564-jvmRun1 surefire13116914215257585562tmp surefire_05329952293587867734tmp"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire1110125475146175927\surefirebooter14528561282141292242.jar C:\Users\User\AppData\Local\Temp\surefire1110125475146175927 2026-09-10T20-17-37_453-jvmRun1 surefire14853766704553409405tmp surefire_013878013824744503080tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\User\OneDrive\Desktop\Assessment-6.2\target\test-classes;C:\Users\User\OneDrive\Desktop\Assessment-6.2\target\classes;C:\Users\User\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire13506159587340108276\surefirebooter531399811176680531.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire1110125475146175927\surefirebooter14528561282141292242.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="26+35-2893"/>
@@ -59,80 +59,24 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="70.0"/>
   </properties>
-  <testcase name="testVehicleRegistration" classname="com.traffic.service.ChallanServiceTest" time="0.035"/>
-  <testcase name="testSpeedAtPermittedLimit" classname="com.traffic.service.ChallanServiceTest" time="0.008"/>
-  <testcase name="testSignalViolation" classname="com.traffic.service.ChallanServiceTest" time="0.019">
-    <failure message="expected:&lt;1000.0&gt; but was:&lt;1500.0&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<1000.0> but was:<1500.0>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:282)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:71)
-	at com.traffic.service.ChallanServiceTest.testSignalViolation(ChallanServiceTest.java:169)
-]]></failure>
-  </testcase>
-  <testcase name="testIllegalParking" classname="com.traffic.service.ChallanServiceTest" time="0.003">
-    <failure message="expected:&lt;500.0&gt; but was:&lt;750.0&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<500.0> but was:<750.0>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:282)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:71)
-	at com.traffic.service.ChallanServiceTest.testIllegalParking(ChallanServiceTest.java:191)
-]]></failure>
-  </testcase>
-  <testcase name="testRepeatedViolationFine" classname="com.traffic.service.ChallanServiceTest" time="0"/>
-  <testcase name="testChallanPayment" classname="com.traffic.service.ChallanServiceTest" time="0"/>
-  <testcase name="testNormalSpeedingFine" classname="com.traffic.service.ChallanServiceTest" time="0.001">
-    <failure message="expected:&lt;500.0&gt; but was:&lt;750.0&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<500.0> but was:<750.0>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:282)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:71)
-	at com.traffic.service.ChallanServiceTest.testNormalSpeedingFine(ChallanServiceTest.java:81)
-]]></failure>
-  </testcase>
-  <testcase name="testMediumSpeedingFine" classname="com.traffic.service.ChallanServiceTest" time="0.005">
-    <failure message="expected:&lt;1000.0&gt; but was:&lt;1500.0&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<1000.0> but was:<1500.0>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:282)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:71)
-	at com.traffic.service.ChallanServiceTest.testMediumSpeedingFine(ChallanServiceTest.java:103)
-]]></failure>
-  </testcase>
-  <testcase name="testHighSpeedingFine" classname="com.traffic.service.ChallanServiceTest" time="0">
-    <failure message="expected:&lt;2000.0&gt; but was:&lt;3000.0&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<2000.0> but was:<3000.0>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:282)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:71)
-	at com.traffic.service.ChallanServiceTest.testHighSpeedingFine(ChallanServiceTest.java:125)
-]]></failure>
-  </testcase>
-  <testcase name="testOutstandingFine" classname="com.traffic.service.ChallanServiceTest" time="0.008">
-    <failure message="expected:&lt;1500.0&gt; but was:&lt;2250.0&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<1500.0> but was:<2250.0>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:282)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:71)
-	at com.traffic.service.ChallanServiceTest.testOutstandingFine(ChallanServiceTest.java:279)
-]]></failure>
-  </testcase>
-  <testcase name="testLowRiskClassification" classname="com.traffic.service.ChallanServiceTest" time="0"/>
-  <testcase name="testInvalidVehicle" classname="com.traffic.service.ChallanServiceTest" time="0.001"/>
-  <testcase name="testNegativeSpeed" classname="com.traffic.service.ChallanServiceTest" time="0"/>
-  <testcase name="testInvalidPermittedSpeed" classname="com.traffic.service.ChallanServiceTest" time="0"/>
-  <testcase name="testMultipleUnpaidChallans" classname="com.traffic.service.ChallanServiceTest" time="0.001">
-    <failure message="expected:&lt;1500.0&gt; but was:&lt;2250.0&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<1500.0> but was:<2250.0>
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:282)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at junit.framework.Assert.assertEquals(Assert.java:71)
-	at com.traffic.service.ChallanServiceTest.testMultipleUnpaidChallans(ChallanServiceTest.java:548)
-]]></failure>
-  </testcase>
-  <testcase name="testDuplicateChallan" classname="com.traffic.service.ChallanServiceTest" time="0"/>
-  <testcase name="testMultipleVehicles" classname="com.traffic.service.ChallanServiceTest" time="0"/>
-  <testcase name="testNullViolation" classname="com.traffic.service.ChallanServiceTest" time="0"/>
+  <testcase name="testNegativeSpeed" classname="com.traffic.service.ChallanServiceTest" time="0.03"/>
   <testcase name="testEmptyLocation" classname="com.traffic.service.ChallanServiceTest" time="0"/>
+  <testcase name="testSignalViolation" classname="com.traffic.service.ChallanServiceTest" time="0.003"/>
+  <testcase name="testNormalSpeedingFine" classname="com.traffic.service.ChallanServiceTest" time="0.001"/>
+  <testcase name="testInvalidVehicle" classname="com.traffic.service.ChallanServiceTest" time="0.003"/>
+  <testcase name="testDuplicateChallan" classname="com.traffic.service.ChallanServiceTest" time="0.005"/>
+  <testcase name="testSpeedAtPermittedLimit" classname="com.traffic.service.ChallanServiceTest" time="0.004"/>
+  <testcase name="testMultipleUnpaidChallans" classname="com.traffic.service.ChallanServiceTest" time="0.005"/>
+  <testcase name="testIllegalParking" classname="com.traffic.service.ChallanServiceTest" time="0.001"/>
+  <testcase name="testHighSpeedingFine" classname="com.traffic.service.ChallanServiceTest" time="0.001"/>
+  <testcase name="testChallanPayment" classname="com.traffic.service.ChallanServiceTest" time="0.001"/>
+  <testcase name="testMediumSpeedingFine" classname="com.traffic.service.ChallanServiceTest" time="0"/>
+  <testcase name="testOutstandingFine" classname="com.traffic.service.ChallanServiceTest" time="0.002"/>
+  <testcase name="testNullViolation" classname="com.traffic.service.ChallanServiceTest" time="0.002"/>
+  <testcase name="testRepeatedViolationFine" classname="com.traffic.service.ChallanServiceTest" time="0.001"/>
+  <testcase name="testInvalidPermittedSpeed" classname="com.traffic.service.ChallanServiceTest" time="0.002"/>
+  <testcase name="testMultipleVehicles" classname="com.traffic.service.ChallanServiceTest" time="0.002"/>
+  <testcase name="testVehicleRegistration" classname="com.traffic.service.ChallanServiceTest" time="0.017"/>
+  <testcase name="testLowRiskClassification" classname="com.traffic.service.ChallanServiceTest" time="0"/>
   <testcase name="testCleanVehicleClassification" classname="com.traffic.service.ChallanServiceTest" time="0"/>
 </testsuite>
